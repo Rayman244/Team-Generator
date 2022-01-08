@@ -52,14 +52,14 @@ const addMore = () =>{
             employeeList.map((emp)=>{
                 const {name,id,email,role,other} = emp
                 cardList.push(createCard(name,role,id,email,other))})
-            fs.appendFile('index.html',generateHtml(cardList), (err) =>
+            fs.appendFile('./dist/index.html',generateHtml(cardList), (err) =>
             err
               ? console.error(`Error appending to file \n ${err}`)
               : console.log(
                   "Successfully created HTML file."
                 )
           )
-          fs.appendFile('styles.css',generateCss(), (err) =>
+          fs.appendFile('./dist/styles.css',generateCss(), (err) =>
           err
             ? console.error(`Error appending to file \n ${err}`)
             : console.log(
