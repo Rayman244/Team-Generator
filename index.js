@@ -1,5 +1,6 @@
 const inquirer = require("inquirer");
-const {Manager,Intern,employeeList, Engineer,cardList} = require('./lib/brain')
+const{Manager,Engineer,Intern,employeeList,cardList}
+
 const {startQ, managerQs, engineerQs, internQs,addMoreQs,addNewEmployeeQs } = require("./lib/Questions");
 const {generateHtml,createCard,generateCss} = require('./lib/genHtml')
 let fs = require('fs')

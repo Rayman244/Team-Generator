@@ -1,29 +1,29 @@
-const Employee = require('../lib/brain')
+const {Employee} = require('../lib/Employee')
+const testEmployee = new Employee('Ray',"1",'mail@mail.com');
+
 describe("Employee", () => {
-    describe("getName", () => {
-      it("should return a new reversed version of the string", () => {
-        const testString = "Hello World!" 
-        const answer = '!dlroW olleH'
-        const obj = new Algo(testString);
-        expect(obj.reverse(testString)).toEqual(answer);
+  describe('getName', () => {
+     it("should return the employees name", () => {
+    const answer = 'Ray'
+    expect(testEmployee.getName()).toEqual(answer);
+   
+    });
+  })
+  
+ 
+  
+    describe("getId", () => {
+      it("should eturn the employees ID.", () => {
+        const  answer = '1' 
+  
+        expect(testEmployee.getId()).toEqual(answer);
       });
     });
   
-    describe("isPalindrome", () => {
-      it("should eturn the boolean `true` if the provided string is a palindrome.", () => {
-        const testWord = `racecar`
-        const obj = new Algo(testWord);
-  
-        expect(obj.isPalindrome(testWord)).toEqual(true);
-      });
-    });
-  
-    describe("capitalize", () => {
-       it("should return a new string with the first letter of each word capitalized ", () => {
-        const testString = "hello world!"
-        const answer = "Hello World!"
-        const obj = new Algo(testString);
-        expect(obj.capitalize(testString)).toEqual(answer);
+    describe("getEmail", () => {
+       it("should return the employees email", () => {
+        const answer = "mail@mail.com"
+        expect(testEmployee.getEmail()).toEqual(answer);
       });
     });
   });
