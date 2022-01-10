@@ -1,5 +1,6 @@
-const {Intern} = require('../lib/brain')
-describe("Manager", () => {
+// const Intern = require('../lib/brain')
+const Intern = require('../lib/Intern')
+describe("Intern", () => {
     const testIntern = new Intern('Ray',"1",'mail@mail.com','Penn');
   describe('getSchool', () => {
      it("should return the Interns school name", () => {

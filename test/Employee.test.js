@@ -1,9 +1,10 @@
-const {Employee} = require('../lib/Employee')
+const Employee = require('../lib/Employee')
 const testEmployee = new Employee('Ray',"1",'mail@mail.com');
 
 describe("Employee", () => {
   describe('getName', () => {
      it("should return the employees name", () => {
+      const testEmployee = new Employee('Ray',"1",'mail@mail.com');
     const answer = 'Ray'
     expect(testEmployee.getName()).toEqual(answer);
    
@@ -14,6 +15,7 @@ describe("Employee", () => {
   
     describe("getId", () => {
       it("should eturn the employees ID.", () => {
+        const testEmployee = new Employee('Ray',"1",'mail@mail.com');
         const  answer = '1' 
   
         expect(testEmployee.getId()).toEqual(answer);
