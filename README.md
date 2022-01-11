@@ -63,10 +63,13 @@ SOFTWARE.
  
 ## How to Contribute
  https://github.com/Rayman244/Team-Generator
+
       
 ## Tests
- Testing with jest: all results passed      
-      
+ Testing with jest: all results passed
+ to run tests:
+  In the terminal run npm i and then npm run test     
+  
  ## Questions
  message me on Github https://github.com/Rayman244/
  email me at [rayhewitt42@icloud.com](mailto:rayhewitt42@icloud.com)
