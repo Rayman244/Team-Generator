@@ -52,7 +52,7 @@ SOFTWARE.
 ![HTML-Badge](https://img.shields.io/badge/Code-HTML-orange)
 ![CSS-Badge](https://img.shields.io/badge/Code-CSS-blue)
 ![Node-Badge](https://img.shields.io/badge/Code-NodeJS-darkgreen)
-![Jest-Badge](https://img.shields.io/badge/Code-Jest-green)
+![Jest-Badge](https://img.shields.io/badge/Test-Jest-green)
 ![Testing-Badge](https://img.shields.io/badge/tests-9%20passed%2C%200%20failed-red)
 
 
